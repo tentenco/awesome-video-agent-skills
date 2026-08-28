@@ -4,7 +4,7 @@
 [![Maintained by Tenten AI](https://img.shields.io/badge/Maintained%20by-Tenten%20AI-ff4500.svg)](https://tenten.co)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/tenten-ai/awesome-video-agent-skills?style=social)](https://github.com/)
+[![GitHub Stars](https://img.shields.io/github/stars/tentenco/awesome-video-agent-skills?style=social)](https://github.com/tentenco/awesome-video-agent-skills)
 
 > 🚀 **目前 GitHub 上，給 Video Agent / Agent Skill 最全、最新、實戰首選的開源庫 (Curated Collection of AI Video Agents, Director Skills, MCP Tools & Autonomous Video Pipelines)**
 > 
