@@ -16,25 +16,25 @@
 
 Tenten AI 是一間 **AI-native Digital Agency & Creative Studio**。我們在第一線運營自媒體、孵化 Influencer / 創作者，同時為企業品牌客戶操盤 YouTube、Shorts、Reels、TikTok 頻道與商業 TVC 廣告。
 
-這份清單**不是學術論文彙編**，也不是「只要名稱有 video 就收」的星數灌水排行。每一個收錄專案都必須通過 Tenten AI 團隊內部的同一道檢驗標準：
+這份清單**不是學術論文彙編**，也不是「只要名稱有 video 就收」的星數灌水排行。每一個收錄專案都必須通過產線內部的同一道檢驗標準：
 
-> 💡 **「這週若要幫一個自營頻道或品牌客戶出片，我們會不會把這個 repo 交給 coding agent 來跑？」**
+> 💡 **「這週若要幫一個頻道或客戶出片，我們會不會把這個 repo 交給 coding agent 來跑？」**
 
 **會，才留下。過期、沒在維護、或只剩 2023–2024 光環的專案，直接淘汰。**
 
-### 🎯 Tenten AI 的四大收錄原則：
+### 🎯 收錄原則 (Curation Rules)：
 
 1. **越新越好 (Freshness First)**：2026 年的專案權重高於 2025 年；同年之中，仍在持續維護與推送的排在前面。
 2. **能被 Agent 驅動 (Agent-Native)**：具備 `SKILL.md`、MCP (Model Context Protocol)、CLI 或穩定的 API。僅支援滑鼠點擊的純 GUI 工具不進主清單。
-3. **實戰驗證 (Production-Tested)**：主清單以 **GitHub Stars $\ge$ 300** 與維護狀態把關；星數未滿 300 但產線正在使用的高潛力 Skill 則獨立收錄至 [Tenten AI Watchlist](#-tenten-ai-watchlist-潛力觀察名單)。
-4. **一個職位只留最好 (Best-in-Class)**：同類工具只保留 canonical 與活躍維護版本，其餘明確記錄於 [Deliberately Excluded (淘汰名單)](#-deliberately-excluded-明確排除與淘汰名單)。
+3. **實戰驗證 (Production-Tested)**：主清單以 **GitHub Stars $\ge$ 300** 與維護狀態把關；星數未滿 300 但產線正在使用的高潛力 Skill 則獨立收錄至 [潛力觀察名單 (Watchlist)](#-潛力觀察名單-watchlist)。
+4. **一個職位只留最好 (Best-in-Class)**：同類工具只保留 canonical 與活躍維護版本，其餘明確記錄於 [明確排除與淘汰名單](#-明確排除與淘汰名單-deliberately-excluded)。
 
 ---
 
 ## 🗺️ 目錄 (Table of Contents)
 
-- [🎬 Tenten AI 實戰產線架構 (Production Architecture)](#-tenten-ai-實戰產線架構-production-architecture)
-- [🏆 Tenten AI First Picks (實戰首選組合)](#-tenten-ai-first-picks-實戰首選組合)
+- [🎬 實戰產線架構 (Production Architecture)](#-實戰產線架構-production-architecture)
+- [🏆 實戰首選組合 (First Picks)](#-實戰首選組合-first-picks)
 - [🌟 1. 多 Agent 虛擬製片廠 (Autonomous Multi-Agent Studios)](#-1-多-agent-虛擬製片廠-autonomous-multi-agent-studios)
 - [💻 2. 程式化與確定性成片引擎 (Programmatic Video Engines)](#-2-程式化與確定性成片引擎-programmatic-video-engines)
 - [✂️ 3. 對話式剪輯師與 MCP 時間軸工具 (Conversational Editors & MCP Timeline)](#-3-對話式剪輯師與-mcp-時間軸工具-conversational-editors--mcp-timeline)
@@ -47,14 +47,14 @@ Tenten AI 是一間 **AI-native Digital Agency & Creative Studio**。我們在�
 - [🎥 10. SOTA 開源影音基座與推論加速 (Open-Weight Models & Local Inference)](#-10-sota-開源影音基座與推論加速-open-weight-models--local-inference)
 - [📐 11. 分鏡預演與視覺開發 (Storyboard, Previs & Drafting)](#-11-分鏡預演與視覺開發-storyboard-previs--drafting)
 - [⚙️ 12. 基礎設施與底層依賴 (Core Infrastructure)](#-12-基礎設施與底層依賴-core-infrastructure)
-- [👀 Tenten AI Watchlist (潛力觀察名單)](#-tenten-ai-watchlist-潛力觀察名單)
-- [🚫 Deliberately Excluded (明確排除與淘汰名單)](#-deliberately-excluded-明確排除與淘汰名單)
+- [👀 潛力觀察名單 (Watchlist)](#-潛力觀察名單-watchlist)
+- [🚫 明確排除與淘汰名單 (Deliberately Excluded)](#-明確排除與淘汰名單-deliberately-excluded)
 - [🛠️ 如何在你的 Agent 中安裝與調用技能 (Quick Start Guide)](#️-如何在你的-agent-中安裝與調用技能-quick-start-guide)
 - [🤝 貢獻指南 (Contributing)](#-貢獻指南-contributing)
 
 ---
 
-## 🎬 Tenten AI 實戰產線架構 (Production Architecture)
+## 🎬 實戰產線架構 (Production Architecture)
 
 現代 Agentic 影音生產流水線依據**產線職位**分工：
 
@@ -86,9 +86,9 @@ flowchart TD
 
 ---
 
-## 🏆 Tenten AI First Picks (實戰首選組合)
+## 🏆 實戰首選組合 (First Picks)
 
-這是 Tenten AI 現階段會優先配置給 Coding Agent 的核心組合：
+這是現階段推薦優先配置給 Coding Agent 的核心組合：
 
 1. **看懂素材、拆解競品與成片 QC** ➔ **[claude-video](https://github.com/bradautomates/claude-video)** (`/watch` 抽幀、轉寫、自評)
 2. **端到端 Agent 製片廠** ➔ **[OpenMontage](https://github.com/calesthio/OpenMontage)** (12 條流水線、數百個 Skill 集合)
@@ -109,9 +109,9 @@ flowchart TD
 
 > 把 Coding Agent 當成完整製片組，涵蓋編劇、導演、分鏡、生成到後期審批。
 
-| 專案名稱 | 介面 / 技術棧 | 核心亮點 | Tenten AI 實戰點評 |
+| 專案名稱 | 介面 / 技術棧 | 核心亮點 | 實戰點評 |
 | :--- | :--- | :--- | :--- |
-| **[OpenMontage](https://github.com/calesthio/OpenMontage)** <br>`calesthio/OpenMontage` | 🤖 `Claude Code` `Cursor` | • 2026 開源 agentic 製片系統，內建 12 條 pipeline、100+ tools、700+ skill 檔。<br>• 模擬真實劇組調度：調研、腳本、分鏡、素材抓取到最終渲染。 | 🔥 **2026 必備開源黑馬**：Tenten 產線的預設整包，讓 coding agent 一秒化身專業影視後期組。 |
+| **[OpenMontage](https://github.com/calesthio/OpenMontage)** <br>`calesthio/OpenMontage` | 🤖 `Claude Code` `Cursor` | • 2026 開源 agentic 製片系統，內建 12 條 pipeline、100+ tools、700+ skill 檔。<br>• 模擬真實劇組調度：調研、腳本、分鏡、素材抓取到最終渲染。 | 🔥 **2026 必備開源黑馬**：實戰產線的預設整包，讓 coding agent 一秒化身專業影視後期組。 |
 | **[ViMax](https://github.com/HKUDS/ViMax)** <br>`HKUDS/ViMax` | 🎬 `Python` `PyTorch` | • 港大數據科學團隊開源的端到端虛擬製片廠。<br>• 內建 Director、Screenwriter、Producer、Generator 四大角色。<br>• 獨創 **AutoCameo** 人物鎖定技術與階層式 RAG 敘事引擎。 | ⭐ **電影級敘事首選**：解決多場景長影片的人物臉孔崩塌與情節失憶問題。 |
 | **[video-use](https://github.com/browser-use/video-use)** <br>`browser-use/video-use` | 🤖 `FFmpeg` `Claude Skill` | • Browser Use 出品的 Agentic 剪輯庫。<br>• 丟入原始素材，Agent 自動去語氣詞、調色、燒字幕、疊加動態並在切點自評。 | 🔥 **口播訪談粗剪神器**：徹底解放剪輯師雙手，口述需求即可完成粗剪與短影音切片。 |
 | **[FireRed-OpenStoryline](https://github.com/FireRedTeam/FireRed-OpenStoryline)** <br>`FireRedTeam/FireRed-OpenStoryline` | 🎞️ `Python` `Editing Agent` | • 將人工時間軸剪輯經驗轉化為 AI editing agent。<br>• 專門為「已有大量素材、需 Agent 完成第一次結構化粗剪」設計。 | 🎯 **長素材粗剪利器**：適合紀錄片、訪談素材與活動記錄的自動梳理。 |
@@ -126,9 +126,9 @@ flowchart TD
 
 > 文字、HTML、React 代碼進，100% 確定性的 MP4 出。品牌色、數字、字幕不能靠擴散模型賭。
 
-| 專案名稱 | GitHub Stars | 核心亮點 | Tenten AI 實戰點評 |
+| 專案名稱 | GitHub Stars | 核心亮點 | 實戰點評 |
 | :--- | :--- | :--- | :--- |
-| **[HyperFrames](https://github.com/heygen-com/hyperframes)** <br>`heygen-com/hyperframes` | 🚀 **HeyGen 官方出品** | • **Write HTML. Render video.** Agent 原生架構。<br>• 任何 Coding Agent 都會寫 HTML/CSS，同一輸入每次產出完全一致。<br>• 完美統一品牌規範、Logo 位置與精確文字排版。 | 👑 **產品與數據影片首選**：Tenten 製作產品更新、動態數據片、個人化 outreach 的預設引擎。 |
+| **[HyperFrames](https://github.com/heygen-com/hyperframes)** <br>`heygen-com/hyperframes` | 🚀 **HeyGen 官方出品** | • **Write HTML. Render video.** Agent 原生架構。<br>• 任何 Coding Agent 都會寫 HTML/CSS，同一輸入每次產出完全一致。<br>• 完美統一品牌規範、Logo 位置與精確文字排版。 | 👑 **產品與數據影片首選**：製作產品更新、動態數據片、個人化 outreach 的預設引擎。 |
 | **[Remotion](https://github.com/remotion-dev/remotion)** <br>`remotion-dev/remotion` | ⭐ **~25,300+** | • 使用 **React + TypeScript** 透過代碼構建動態視頻的行業標準。<br>• 支援 GPU 硬體加速與 AWS Lambda Serverless 批次渲染。<br>• 提供龐大的生態系與官方 [remotion-dev/skills](https://github.com/remotion-dev/skills)。 | 🏆 **現代影音工程基石**：動態複雜度高，最適合精品 Motion Graphics 與雲端批次生成。 |
 | **[video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft)** <br>`Vincentwei1021/video-shotcraft` | ⭐ **~5.6k+** | • 2026 成長最快的產品片 Skill 之一。<br>• 內建 152 張鏡頭配方卡、209 段 motion preview、2.5D 運鏡，可直接匯出剪映草稿。 | 🎯 **SaaS 與科技產品片標竿**：大幅降低專業 motion 運鏡的編程門檻。 |
 | **[Manim](https://github.com/ManimCommunity/manim)** <br>`ManimCommunity/manim` | ⭐ **~65,000+** | • 3Blue1Brown 創立的專業數學與邏輯動畫社群版引擎 (Python)。<br>• Agent 能夠直接編寫 Python 腳本生成極致精美的圖表、公式推導動畫。 | 🎓 **科普與教育必備**：知識型博主、技術教學頻道生成高水準動態說明的必備底層。 |
@@ -141,9 +141,9 @@ flowchart TD
 
 > 讓 Agent 真正能夠操作時間軸，而非只能一次次重新渲染整條視頻。
 
-| 專案名稱 | 技術棧 / 協議 | 核心亮點 | Tenten AI 實戰點評 |
+| 專案名稱 | 技術棧 / 協議 | 核心亮點 | 實戰點評 |
 | :--- | :--- | :--- | :--- |
-| **[OpenChatCut](https://github.com/0xsline/OpenChatCut)** <br>`0xsline/OpenChatCut` | 💻 `Local-First` `MCP` `React` | • 本地優先的對話式 AI 視頻編輯器，兼具專業多軌可視化時間線。<br>• 支援 AI Agent 透過 MCP 協議在時間線上精確下達剪輯、轉場與效果指令。<br>• 創作者保有最終手動調整權。 | ⭐ **人機協同剪輯標竿**：ChatCut 的開源替代，Tenten 目前的開源 NLE 首選。 |
+| **[OpenChatCut](https://github.com/0xsline/OpenChatCut)** <br>`0xsline/OpenChatCut` | 💻 `Local-First` `MCP` `React` | • 本地優先的對話式 AI 視頻編輯器，兼具專業多軌可視化時間線。<br>• 支援 AI Agent 透過 MCP 協議在時間線上精確下達剪輯、轉場與效果指令。<br>• 創作者保有最終手動調整權。 | ⭐ **人機協同剪輯標竿**：ChatCut 的開源替代，現階段開源 NLE 的首選。 |
 | **[ChatCut Agent Plugin](https://github.com/ChatCut-Inc/agent-plugin)** <br>`ChatCut-Inc/agent-plugin` | 🔌 `Official MCP` | • 官方 plugin，讓 Claude Code / Codex 透過 MCP 直接進入 ChatCut。<br>• 支援時間軸、動效、素材管理、字幕與編排內即時驗證。 | 💼 **官方擴充模組**：適合已經深度使用 ChatCut 商業生態的團隊。 |
 | **[Adobe_Premiere_Pro_MCP](https://github.com/hetpatel-11/Adobe_Premiere_Pro_MCP)** <br>`hetpatel-11/Adobe_Premiere_Pro_MCP` | 🔌 `~500+ Stars` `PR API` | • 連接 AI Agent（Cursor / Claude）與 Adobe Premiere Pro 的官方級 MCP 伺服器。<br>• Agent 可直接在 PR 時間線上建立軌道、導入素材、自動切除氣口與套用預設。 | 💼 **專業工作室必備**：無縫嵌入現有影視後製工作流，無痛升級 Agent 化。 |
 | **[OpenCut](https://github.com/OpenCut-app/OpenCut)** <br>`OpenCut-app/OpenCut` | ✂️ `CapCut Alternative` | • 開源 CapCut 網頁替代版，具備完整時間軸本體。<br>• 適合需要給非工程師人員手動微調的交付場景。 | 🛠️ **視覺化交付**：適合做為客戶或審核人員的線上檢視介面。 |
@@ -155,11 +155,11 @@ flowchart TD
 
 > 模型每季升級，Skill 的價值在於：Agent 不用每次重新學習運鏡、連戲與多參考圖組合。
 
-| 專案名稱 | 支援模型 / 框架 | 核心亮點 | Tenten AI 實戰點評 |
+| 專案名稱 | 支援模型 / 框架 | 核心亮點 | 實戰點評 |
 | :--- | :--- | :--- | :--- |
-| **[Emily2040/seedance-2.0](https://github.com/Emily2040/seedance-2.0)** <br>`Emily2040/seedance-2.0` | ⚡ `Seedance 2.0/2.5` `Agent Skill` | • Seedance 四模態製片管線：分鏡、運鏡、燈光、表演、聲音、跨鏡連戲與失敗診斷。<br>• 星數與更新活躍度遠超單純的提示詞範本。 | 🏆 **Seedance 產線主包**：Tenten 生成連貫鏡頭與角色動作時的必備基礎。 |
-| **[higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill)** <br>`OSideMedia/higgsfield-ai-prompt-skill` | 🎬 `Higgsfield` `Seedance 2.5` `Claude Skill` | • 內含 32 個子技能：Seedance 2.5 omni-reference、MCSLA 語法體系、Soul ID 角色鎖定與 Kling 3.0 運動控制。 | 🌟 **電影美學大師**：我們在 Higgsfield / Seedance 上出高質感商業片時的預設配置。 |
-| **[lanshu-awesome-ai-video-kit](https://github.com/cclank/lanshu-awesome-ai-video-kit)** <br>`cclank/lanshu-awesome-ai-video-kit` | 🌐 `15+ Models` `Claude Skills` | • 跨 15 個主流模型（Sora、Veo、Kling、Runway 等），收錄 500+ 實測 Prompt 與 7 個 Claude Skill。<br>• 內建 model-selector 與每週自動 CI 校驗。 | 📚 **跨模型公式字典**：面對不同客戶指定不同模型時的最佳 Prompt 參考庫。 |
+| **[Emily2040/seedance-2.0](https://github.com/Emily2040/seedance-2.0)** <br>`Emily2040/seedance-2.0` | ⚡ `Seedance 2.0/2.5` `Agent Skill` | • Seedance 四模態製片管線：分鏡、運鏡、燈光、表演、聲音、跨鏡連戲與失敗診斷。<br>• 星數與更新活躍度遠超單純的提示詞範本。 | 🏆 **Seedance 產線主包**：生成連貫鏡頭與角色動作時的必備基礎。 |
+| **[higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill)** <br>`OSideMedia/higgsfield-ai-prompt-skill` | 🎬 `Higgsfield` `Seedance 2.5` `Claude Skill` | • 內含 32 個子技能：Seedance 2.5 omni-reference、MCSLA 語法體系、Soul ID 角色鎖定與 Kling 3.0 運動控制。 | 🌟 **電影美學大師**：在 Higgsfield / Seedance 上出高質感商業片時的預設配置。 |
+| **[lanshu-awesome-ai-video-kit](https://github.com/cclank/lanshu-awesome-ai-video-kit)** <br>`cclank/lanshu-awesome-ai-video-kit` | 🌐 `15+ Models` `Claude Skills` | • 跨 15 個主流模型（Sora、Veo、Kling、Runway 等），收錄 500+ 實測 Prompt 與 7 個 Claude Skill。<br>• 內建 model-selector 與每週自動 CI 校驗。 | 📚 **跨模型公式字典**：面對不同場景指定不同模型時的最佳 Prompt 參考庫。 |
 | **[MiniMax-AI/skills](https://github.com/MiniMax-AI/skills)** <br>`MiniMax-AI/skills` | 🐚 `Hailuo` `MiniMax Official` | • MiniMax 官方 Agent Skills。`minimax-multimodal-toolkit` 覆蓋海螺視頻、TTS、音樂與多場次長片。 | 🎯 **Hailuo 官方首選**：優先安裝官方包以獲取第一手參數支援。 |
 | **[ai-shortfilm-prompts](https://github.com/jnMetaCode/ai-shortfilm-prompts)** <br>`jnMetaCode/ai-shortfilm-prompts` | 🎥 `Film Structure` | • 將任何創意點子轉換為 Sora / Kling / Veo / Seedance 的電影向 Prompt。<br>• 內建 21 個類型模板與五段式敘事評估。 | 💡 **故事短片專用**：迅速將故事綱要轉化為專業電影劇本結構。 |
 
@@ -169,7 +169,7 @@ flowchart TD
 
 > 口播、課程、虛擬主播。2026 年產線切勿再使用已停更的 2024 舊模型。
 
-| 專案名稱 | 核心技術 | 核心亮點 | Tenten AI 實戰點評 |
+| 專案名稱 | 核心技術 | 核心亮點 | 實戰點評 |
 | :--- | :--- | :--- | :--- |
 | **[LivePortrait](https://github.com/KlingAIResearch/LivePortrait)** <br>`KlingAIResearch/LivePortrait` | 肖像動作遷移 <br>`~15k+ Stars` | • 快手開源的頂級肖像驅動模型。<br>• 僅需一張靜態圖片或短片即可將面部表情生動「演」起來。 | 👑 **肖像動畫開源預設**：表情細膩自然，極度適合虛擬頭像與表情包製作。 |
 | **[Duix-Avatar](https://github.com/duixcom/Duix-Avatar)** <br>`duixcom/Duix-Avatar` | 離線數字人 <br>`Commercial-Ready` | • 輕量級離線數字人工具包，支援本地即時渲染與對話互動。 | 💼 **本機商用數字人首選**：資料不離地，適合企業內部培訓與隱私要求高的場景。 |
@@ -184,10 +184,10 @@ flowchart TD
 
 > 影片 Agent 的成敗一半在畫面，一半在聲音。收錄 2026 現役最穩定的旁白配音與克隆模型。
 
-| 專案名稱 | 語言 / 特性 | 核心亮點 | Tenten AI 實戰點評 |
+| 專案名稱 | 語言 / 特性 | 核心亮點 | 實戰點評 |
 | :--- | :--- | :--- | :--- |
-| **[Index-TTS](https://github.com/index-tts/index-tts)** <br>`index-tts/index-tts` | 中文/英文 <br>`Zero-Shot` | • 工業級、高可控的 zero-shot 語音合成。<br>• 情緒表達豐富，音質清澈，完全無機械感。 | 🏆 **2026 中文旁白首選**：Tenten 自營頻道商業旁白生成的主力工具之一。 |
-| **[GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)** <br>`RVC-Boss/GPT-SoVITS` | 多語聲音克隆 <br>`~40k+ Stars` | • 僅需 5 秒至 1 分鐘語音素材即可完成高品質聲音克隆。<br>• 支援跨語言合成與音色微調。 | 👑 **個人 IP 聲音克隆預設**：客戶要求「聽起來像自己」時的標準方案。 |
+| **[Index-TTS](https://github.com/index-tts/index-tts)** <br>`index-tts/index-tts` | 中文/英文 <br>`Zero-Shot` | • 工業級、高可控的 zero-shot 語音合成。<br>• 情緒表達豐富，音質清澈，完全無機械感。 | 🏆 **2026 中文旁白首選**：商業旁白與解說生成的主力工具之一。 |
+| **[GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)** <br>`RVC-Boss/GPT-SoVITS` | 多語聲音克隆 <br>`~40k+ Stars` | • 僅需 5 秒至 1 分鐘語音素材即可完成高品質聲音克隆。<br>• 支援跨語言合成與音色微調。 | 👑 **個人 IP 聲音克隆預設**：需要「聽起來像特定講者」時的標準方案。 |
 | **[fish-speech](https://github.com/fishaudio/fish-speech)** <br>`fishaudio/fish-speech` | 多語/開源上限 <br>`~15k+ Stars` | • 基於自迴歸 Transformer 的頂級開源 TTS，語氣自然度與呼吸感極佳。 | 🌟 **音質上限標竿**：長篇有聲書與高品質紀錄片旁白首選。 |
 | **[Chatterbox](https://github.com/resemble-ai/chatterbox)** <br>`resemble-ai/chatterbox` | 英文旁白旗艦 <br>`Resemble AI` | • 2025–2026 開源 TTS 新旗艦，英文發音自然流暢，節奏感極強。 | 🇺🇸 **英文出海頻道必備**：製作面向北美與全球市場的短影音利器。 |
 | **[CosyVoice](https://github.com/QwenAudio/CosyVoice)** <br>`QwenAudio/CosyVoice` | 阿里通義多語生成 | • 阿里開源的多語言多方言語音生成模型，支援精細情緒控制與中英混讀。 | 🌐 **雙語頻道利器**：中英文夾雜科技講解影片的首選。 |
@@ -200,12 +200,12 @@ flowchart TD
 
 > 沒有字幕的短影音等於無效傳播。切片與剪映草稿是現代產線交付的關鍵最後一哩。
 
-| 專案名稱 | 核心功能 | 核心亮點 | Tenten AI 實戰點評 |
+| 專案名稱 | 核心功能 | 核心亮點 | 實戰點評 |
 | :--- | :--- | :--- | :--- |
 | **[VideoCaptioner](https://github.com/WEIFENG2333/VideoCaptioner)** <br>`WEIFENG2333/VideoCaptioner` | 卡卡字幕助手 <br>`GUI / CLI` | • 基於 LLM 的語義斷句、字幕校正、雙語翻譯全流程。<br>• 支援個人化字體樣式、動態花字與自動壓制。 | 🏆 **中文產線最常用字幕流**：徹底解決字句太長、斷句不自然的通病。 |
 | **[KrillinAI](https://github.com/krillinai/KrillinAI)** <br>`krillinai/KrillinAI` | 人機協同翻譯配音 | • 字幕、配音、高光切片一條龍處理，提供良好的 API 與 Agent 整合介面。 | 🌐 **出海本地化首選**：適合外語視頻引進與本土化二次分發。 |
 | **[FunClip](https://github.com/modelscope/FunClip)** <br>`modelscope/FunClip` | 阿里 FunASR 驅動切片 | • 透過語音轉寫文字直接選取想要保留的段落，AI 自動裁剪視頻。 | ✂️ **按文字剪視頻**：快速粗剪長篇演講與會議記錄。 |
-| **[pyJianYingDraft](https://github.com/GuanYixuan/pyJianYingDraft)** <br>`GuanYixuan/pyJianYingDraft` | Python 剪映草稿生成 | • 用 Python 直接生成 CapCut / 剪映原生的 `.json` 草稿工程檔。<br>• 包含軌道、特效、關鍵幀、貼紙與字體排版。 | 👑 **中文交付必備基底**：Agent 完成粗剪後直接生成剪映工程，交給剪輯師精修。 |
+| **[pyJianYingDraft](https://github.com/GuanYixuan/pyJianYingDraft)** <br>`GuanYixuan/pyJianYingDraft` | Python 剪映草稿生成 | • 用 Python 直接生成 CapCut / 剪映原生的 `.json` 草稿工程檔。<br>• 包含軌道、特效、關鍵幀、貼紙與字體排版。 | 👑 **交付必備基底**：Agent 完成粗剪後直接生成剪映工程，交給剪輯師精修。 |
 | **[auto-editor](https://github.com/WyattBlue/auto-editor)** <br>`WyattBlue/auto-editor` | 自動切除靜音氣口 | • 古典而強大的 CLI 工具，依據音量波形自動切除無聲段落與氣口。 | ⚡ **極速粗剪**：Podcast 與訪談視頻在上傳至 Agent 前的標準預處理步驟。 |
 | **[VideoLingo](https://github.com/Huanshere/VideoLingo)** <br>`Huanshere/VideoLingo` | ⭐ **~18.3k Stars** | • **影視級**視頻翻譯、本地化與配音旗艦工具。<br>• 採用 NLP 語義斷句，徹底解決生硬機翻與字幕過長跳行痛點。<br>• 整合 GPT-SoVITS / CosyVoice 聲音克隆，配備個人化字體排版與自動壓制。 | 🏆 **全球化出海第一首選**：翻譯自然度堪比 Netflix 原生字幕，跨境電商與國際頻道必用。 |
 | **[pyvideotrans](https://github.com/jianchang512/pyvideotrans)** <br>`jianchang512/pyvideotrans` | ⭐ **~17.6k Stars** | • 開源多語言視頻翻譯與配音神器。<br>• 支援語音識別 (Whisper)、多通道文字翻譯、百種 TTS 引擎以及唇形對齊 (Wav2Lip)。<br>• 提供跨平台圖形客戶端，操作極度直覺。 | 🌟 **全能本地化工具箱**：支援海量音色與翻譯通道，批量處理長篇訪談或教學影片極佳。 |
@@ -216,7 +216,7 @@ flowchart TD
 
 > 一鍵端到端「文案 -> 素材檢索 -> 語音合成 -> 智慧字幕 -> 自動剪輯」，適合批量運營矩陣號。
 
-| 專案名稱 | GitHub Stars | 核心亮點 | Tenten AI 實戰點評 |
+| 專案名稱 | GitHub Stars | 核心亮點 | 實戰點評 |
 | :--- | :--- | :--- | :--- |
 | **[MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo)** <br>`harry0703/MoneyPrinterTurbo` | ⭐ **~105,000+** | • 繁星級一站式短影音全自動量產工廠。<br>• 輸入關鍵字，自動呼叫 LLM 寫文案、Pexels 匹配素材、TTS 配音、Whisper 上字幕。<br>• 支援豎屏 9:16、橫屏 16:9，提供 WebUI 與 API 批次介面。 | 🏆 **矩陣流量天花板**：社群矩陣號、知識類帳號自動化鋪量最穩定成熟的開源方案。 |
 | **[Pixelle-Video](https://github.com/ATH-MaaS/Pixelle-Video)** <br>`ATH-MaaS/Pixelle-Video` | 🎬 `全自動短影音` | • 新一代題材進、成片出的短影音自動化引擎，著重畫面轉場與節奏設計。 | 🚀 **現代替代方案**：架構新穎，適合作為自建短影音應用的核心。 |
@@ -229,9 +229,9 @@ flowchart TD
 
 > Agent 若不會「看」影片，就無法完成產線的品質監控 (QC)，也無法精確拆解爆款競品。
 
-| 專案名稱 | 核心功能 | 核心亮點 | Tenten AI 實戰點評 |
+| 專案名稱 | 核心功能 | 核心亮點 | 實戰點評 |
 | :--- | :--- | :--- | :--- |
-| **[claude-video](https://github.com/bradautomates/claude-video)** <br>`bradautomates/claude-video` | 👁️ `/watch` Skill | • 透過單一 `/watch` 指令：自動下載、精準抽幀、語音轉寫，讓 Claude 真正「看過」視頻。<br>• 深度拆解影片 Hook、視覺節奏、字幕排版，並對自身產出的成品進行 QC 驗收。 | 👑 **產線必裝神技**：Tenten 分析競品與做成片審核的第一道關卡。 |
+| **[claude-video](https://github.com/bradautomates/claude-video)** <br>`bradautomates/claude-video` | 👁️ `/watch` Skill | • 透過單一 `/watch` 指令：自動下載、精準抽幀、語音轉寫，讓 Claude 真正「看過」視頻。<br>• 深度拆解影片 Hook、視覺節奏、字幕排版，並對自身產出的成品進行 QC 驗收。 | 👑 **產線必裝神技**：分析競品與做成片審核的第一道關卡。 |
 | **[Qwen3-VL](https://github.com/QwenLM/Qwen3-VL)** <br>`QwenLM/Qwen3-VL` | 多模態視覺大模型 | • 阿里通義最新多模態視覺語言旗艦，長視頻理解與精細物體定位能力處於開源第一梯隊。 | 🌟 **視覺理解基底**：自架長視頻問答與場景檢索的核心模型。 |
 | **[edit-mind](https://github.com/IliasHad/edit-mind)** <br>`IliasHad/edit-mind` | 本地視頻知識庫 | • 本機優先的視頻素材知識庫，將海量 B-Roll 素材建立可自然語言檢索的向量索引。 | 🗂️ **素材庫管理必備**：讓 Agent 能夠依照文案語意瞬間找到最合適的歷史素材。 |
 | **[VideoLLaMA3](https://github.com/DAMO-NLP-SG/VideoLLaMA3)** <br>`DAMO-NLP-SG/VideoLLaMA3` | 開源長視頻理解 | • 專為細粒度動作理解與時序因果推理設計的開源架構。 | 🔬 **深度語意分析**：適合科研與自建視頻審核流水線。 |
@@ -277,9 +277,9 @@ flowchart TD
 
 ---
 
-## 👀 Tenten AI Watchlist (潛力觀察名單)
+## 👀 潛力觀察名單 (Watchlist)
 
-> 💡 **此區域專門收錄目前 Stars 未達 300 顆，但 Tenten AI 產線已在實戰測試或極具潛力的創新 Agent Skills。**
+> 💡 **此區域專門收錄目前 Stars 未達 300 顆，但已在實戰測試或極具潛力的創新 Agent Skills。**
 
 - **[Seedance-ShotDesign-Skills](https://github.com/woodfantasy/Seedance-ShotDesign-Skills)** - 將 Seedance 2.5 官方手冊重構為 Agent Skill，包含運鏡路由、多參考圖與局部重繪。
 - **[seedance-tvc-director](https://github.com/nutllwhy/seedance-tvc-director)** - 專注商業廣告 TVC 的導演 Prompt Skill：產品 Brief 轉 15s/30s 策略與旁白路由。
@@ -291,9 +291,9 @@ flowchart TD
 
 ---
 
-## 🚫 Deliberately Excluded (明確排除與淘汰名單)
+## 🚫 明確排除與淘汰名單 (Deliberately Excluded)
 
-> 為了保持本庫的純粹度與工業實戰價值，以下專案經 Tenten AI 團隊審查後**明確不予收錄**：
+> 為了保持本庫的純粹度與工業實戰價值，以下專案經審查後**明確不予收錄**：
 
 | 專案名稱 | 排除原因與 SOTA 替代建議 |
 | :--- | :--- |
@@ -352,7 +352,7 @@ claude "調用 video-kit 技能，幫我將這段新產品 Brief 轉換為 30 �
 我們非常歡迎全球創作者與開發者提交最前沿的 Video Agent 專案！詳細規範請參閱 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ### 收錄門檻：
-1. **GitHub Stars $\ge$ 300**（2026 最新檢驗）；若為全新創新 Skill，請提交至 [Tenten AI Watchlist](#-tenten-ai-watchlist-潛力觀察名單)。
+1. **GitHub Stars $\ge$ 300**（2026 最新檢驗）；若為全新創新 Skill，請提交至 [潛力觀察名單 (Watchlist)](#-潛力觀察名單-watchlist)。
 2. **近 6 個月保持活躍維護**，杜絕停更專案。
 3. **Agent-Native**：必須具備 Skill 檔、MCP、CLI 或 API，能被程式化調用。
 
