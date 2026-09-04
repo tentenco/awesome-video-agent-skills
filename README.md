@@ -129,6 +129,7 @@ flowchart TD
 | 專案名稱 | GitHub Stars | 核心亮點 | 實戰點評 |
 | :--- | :--- | :--- | :--- |
 | **[HyperFrames](https://github.com/heygen-com/hyperframes)** <br>`heygen-com/hyperframes` | 🚀 **HeyGen 官方出品** | • **Write HTML. Render video.** Agent 原生架構。<br>• 任何 Coding Agent 都會寫 HTML/CSS，同一輸入每次產出完全一致。<br>• 完美統一品牌規範、Logo 位置與精確文字排版。 | 👑 **產品與數據影片首選**：製作產品更新、動態數據片、個人化 outreach 的預設引擎。 |
+| **[OrkasVideoStudio](https://github.com/Orkas-AI/Orkas-VideoStudio)** <br>`Orkas-AI/Orkas-VideoStudio` | 🤖 `TypeScript` `CLI` `MCP` ⭐ 491 | • 本地優先，讓 coding agent 以可編輯的 `plan.json` 編排、剪輯、生成並自動成片。<br>• 零 Key 主幹可從原始碼安裝；生成能力使用自有 Provider Key。 | 🎯 **可審核 Agent 產線**：CLI、MCP 與技能包共用同一套時間線和驗收流程。 |
 | **[Remotion](https://github.com/remotion-dev/remotion)** <br>`remotion-dev/remotion` | ⭐ **~25,300+** | • 使用 **React + TypeScript** 透過代碼構建動態視頻的行業標準。<br>• 支援 GPU 硬體加速與 AWS Lambda Serverless 批次渲染。<br>• 提供龐大的生態系與官方 [remotion-dev/skills](https://github.com/remotion-dev/skills)。 | 🏆 **現代影音工程基石**：動態複雜度高，最適合精品 Motion Graphics 與雲端批次生成。 |
 | **[video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft)** <br>`Vincentwei1021/video-shotcraft` | ⭐ **~5.6k+** | • 2026 成長最快的產品片 Skill 之一。<br>• 內建 152 張鏡頭配方卡、209 段 motion preview、2.5D 運鏡，可直接匯出剪映草稿。 | 🎯 **SaaS 與科技產品片標竿**：大幅降低專業 motion 運鏡的編程門檻。 |
 | **[Manim](https://github.com/ManimCommunity/manim)** <br>`ManimCommunity/manim` | ⭐ **~65,000+** | • 3Blue1Brown 創立的專業數學與邏輯動畫社群版引擎 (Python)。<br>• Agent 能夠直接編寫 Python 腳本生成極致精美的圖表、公式推導動畫。 | 🎓 **科普與教育必備**：知識型博主、技術教學頻道生成高水準動態說明的必備底層。 |
