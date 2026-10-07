@@ -99,16 +99,16 @@ flowchart TD
 
 這是現階段推薦優先配置給 Coding Agent 的核心組合：
 
-1. **看懂素材、拆解競品與成片 QC** ➔ **[claude-video](https://github.com/bradautomates/claude-video)** (`/watch` 抽幀、轉寫、自評) + **[reelbench-skills](https://github.com/eternityspring/reelbench-skills)** (本地零依賴逐鏡拉片、15 道質檢)
-2. **端到端 Agent 製片廠** ➔ **[OpenMontage](https://github.com/calesthio/OpenMontage)** (12 條流水線、數百個 Skill 集合) + **[hypit](https://github.com/hypit-ai/hypit)** (爆款短影音克隆、自動換臉與 100 變體裂變) + **[qiaomu-cut-skill](https://github.com/joeseesun/qiaomu-cut-skill)** (素材治理、分鏡動效與可復現渲染)
+1. **看懂素材、拆解競品與成片 QC** ➔ **[claude-video](https://github.com/bradautomates/claude-video)** (`/watch` 抽幀、轉寫、自評) + **[mcp-video-analyzer](https://github.com/guimatheus92/mcp-video-analyzer)** (FastMCP 7 大工具多平台視頻透視) + **[reelbench-skills](https://github.com/eternityspring/reelbench-skills)** (本地零依賴逐鏡拉片、15 道質檢)
+2. **端到端 Agent 製片廠** ➔ **[OpenMontage](https://github.com/calesthio/OpenMontage)** (12 條流水線、數百個 Skill 集合) + **[Director](https://github.com/video-db/Director)** (VideoDB 影音中台) + **[HKUDS/VideoAgent](https://github.com/HKUDS/VideoAgent)** (EMNLP 2026 全能重製) + **[qiaomu-cut-skill](https://github.com/joeseesun/qiaomu-cut-skill)** (素材治理、確定性渲染)
 3. **HTML 程式化直接出 MP4** ➔ **[HyperFrames](https://github.com/heygen-com/hyperframes)** (HeyGen 開源，零擴散失真、像素級確定)
-4. **React 精品動態與鏡頭配方** ➔ **[remotion-dev/skills](https://github.com/remotion-dev/skills)** + **[video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft)** + **[onetake](https://github.com/feitangyuan/onetake)** (一鏡到底宣傳片)
-5. **口播／訪談自動粗剪** ➔ **[video-use](https://github.com/browser-use/video-use)** + **[chengfeng-videocut-skills](https://github.com/Agentchengfeng/chengfeng-videocut-skills)** (自然語言自動去贅字、生成交互式 Web 審核)
-6. **時間軸級對話式 NLE** ➔ **[OpenChatCut](https://github.com/0xsline/OpenChatCut)** + **[cartcut](https://github.com/cartesiancs/cartcut)** (開源分層 NLE、原生 MCP 時間軸操控、支援 `⌘Z`)
+4. **React 精品動態與 ComfyUI 代碼工作流** ➔ **[remotion-dev/skills](https://github.com/remotion-dev/skills)** + **[comfyui-workflow-skill](https://github.com/LingyiChen-AI/comfyui-workflow-skill)** (自然語言轉 Wan 2.2 / Hunyuan JSON) + **[video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft)**
+5. **口播／訪談自動粗剪與官方數字人** ➔ **[video-use](https://github.com/browser-use/video-use)** + **[HeyGen Agent Skills](https://github.com/heygen-com/skills)** (官方 MCP / CLI 口播管線) + **[chengfeng-videocut-skills](https://github.com/Agentchengfeng/chengfeng-videocut-skills)**
+6. **時間軸級對話式 NLE** ➔ **[OpenChatCut](https://github.com/0xsline/OpenChatCut)** + **[cartcut](https://github.com/cartesiancs/cartcut)** (開源分層 NLE、原生 MCP 時間軸操控、支援 `⌘Z`) + **[UniVA](https://github.com/univa-agent/univa)**
 7. **專業 NLE 宿主 MCP 橋接** ➔ **[Adobe_Premiere_Pro_MCP](https://github.com/hetpatel-11/Adobe_Premiere_Pro_MCP)** + **[davinci-resolve-mcp](https://github.com/apvlv/davinci-resolve-mcp)**
 8. **角色一致性與導演主力包** ➔ **[ConsisID](https://github.com/PKU-YuanGroup/ConsisID)** (免微調身份保持 SOTA) + **[Emily2040/seedance-2.0](https://github.com/Emily2040/seedance-2.0)** + **[CameraCtrl](https://github.com/hehao13/CameraCtrl)** (物理相機軌跡控制)
-9. **聲音克隆、音效與神經擬音** ➔ **[Index-TTS](https://github.com/index-tts/index-tts)** + **[MMAudio](https://github.com/hkchengrex/MMAudio)** + **[FoleyCrafter](https://github.com/open-mmlab/FoleyCrafter)** (動作級精確擬音)
-10. **全流程評測基準與工業天梯** ➔ **[Artificial Analysis Video Arena](https://artificialanalysis.ai/)** + **[VBench-2.0](https://github.com/Vchitect/VBench)**
+9. **聲音克隆、音效與神經擬音** ➔ **[Index-TTS](https://github.com/index-tts/index-tts)** + **[HunyuanVideo-Foley](https://github.com/Tencent-Hunyuan/HunyuanVideo-Foley)** (騰訊官方擬音) + **[FoleyCrafter](https://github.com/open-mmlab/FoleyCrafter)** + **[MMAudio](https://github.com/hkchengrex/MMAudio)**
+10. **全流程評測基準與工業天梯** ➔ **[Artificial Analysis Video Arena](https://artificialanalysis.ai/)** + **[VBench-2.0](https://github.com/Vchitect/VBench)** + **[UniVBench](https://arxiv.org/abs/2511.08521)**
 
 ---
 
@@ -130,7 +130,9 @@ flowchart TD
 | **[onetake](https://github.com/feitangyuan/onetake)** <br>`feitangyuan/onetake` | 🎥 `~1.7k Stars` `Agent Skill` | • 「一鏡到底 (One Continuous Camera)」動態宣傳片與 Demo 引擎。<br>• 鏡頭元素自然過渡至下一場景，內建 `probe.py` 進行幀級連戲與運動模糊質檢。 | 🚀 **產品發布片新標準**：告別突兀硬切，呈現流暢絲滑的連續鏡頭體驗。 |
 | **[screenwriting-skills](https://github.com/jtydhr88/screenwriting-skills)** <br>`jtydhr88/screenwriting-skills` | 📖 `~1.6k Stars` `26 Skills` | • 劇作大師級編劇 Agent Skill 套件，精煉自 47 本專業影視劇作經典與 23 套名劇劇本。<br>• 涵蓋三幕劇結構、人物弧光、對白打磨與情節節奏診斷。 | 💡 **專業劇本底層大腦**：大幅提升 AI 編劇的戲劇張力與人物深度。 |
 | **[FireRed-OpenStoryline](https://github.com/FireRedTeam/FireRed-OpenStoryline)** <br>`FireRedTeam/FireRed-OpenStoryline` | 🎞️ `Python` `Editing Agent` | • 將人工時間軸剪輯經驗轉化為 AI editing agent。<br>• 專門為「已有大量素材、需 Agent 完成第一次結構化粗剪」設計。 | 🎯 **長素材粗剪利器**：適合紀錄片、訪談素材與活動記錄的自動梳理。 |
-| **[HKUDS/VideoAgent](https://github.com/HKUDS/VideoAgent)** <br>`HKUDS/VideoAgent` | 🧠 `Multi-Agent` `CVPR` | • 理解、剪輯、生成融為一體的 Agentic 框架。<br>• 適用於「看完原始影片再進行智慧剪輯」而非單純文字生成畫面。 | 💡 **智慧剪輯研究標竿**：具備強大的長視頻記憶與上下文檢索能力。 |
+| **[HKUDS/VideoAgent](https://github.com/HKUDS/VideoAgent)** <br>`HKUDS/VideoAgent` | 🧠 `~1.9k Stars` <br>`EMNLP 2026` | • 理解、剪輯、聲音重塑與重製融為一體的全能 Agentic 框架。<br>• 支援保持原說話者音色的台詞重塑、脫口秀劇本轉影片、長視頻記憶與上下文檢索。 | 💡 **智慧重塑與剪輯研究標竿**：長視頻理解與多模態聲音/畫面二次創作首選。 |
+| **[Director](https://github.com/video-db/Director)** <br>`video-db/Director` | 🎬 `~1.5k Stars` <br>`Agent Framework` | • VideoDB 官方開源的視頻 Agent 框架，具備完整的前後端架構與 Agent 註冊中心。<br>• 內建模組化 Agent 擴充、視頻語義檢索、即時進度推送與多模態內容生成管線。 | 🚀 **企業級 Agentic 影音中台**：適合自建專屬業務 Video Agent 與工作流系統。 |
+| **[UniVA](https://github.com/univa-agent/univa)** <br>`univa-agent/univa` | 🌐 `~540+ Stars` <br>`MCP Native / Bun` | • 面向下一代開源通用視頻智能體的架構 (Universal Video Agent)。<br>• 採用 FastAPI 後端 + Bun/Next.js 前端（基於 OpenCut 改編），原生支援 MCP 工具鏈調用。 | 🛠️ **全流程通用智能體**：兼具可視化時間軸與 Agent MCP 自動化執行的下一代平台。 |
 | **[Toonflow](https://github.com/zai-org/Toonflow-app)** <br>`zai-org/Toonflow-app` | 🎨 `~14.7k Stars` `Desktop` | • 一站式 AI 動畫短劇與動漫創作工作站。<br>• 覆蓋故事大綱、劇本分鏡、角色設定、動作生成到最終成片，支援視覺化分鏡板。 | 🏆 **二次元/短劇必備**：極大降低短劇出海與漫畫推文視頻的量產門檻。 |
 | **[dramaclaw](https://github.com/dramaclaw/dramaclaw)** <br>`dramaclaw/dramaclaw` | 🎭 `AIGC Engine` | • 劇本到成片的通用 AIGC 引擎：專注短劇、商業廣告與知識解說。 | 🎬 **短劇流水線**：適合需要批量產出短劇片段的工作室。 |
 | **[vargHQ/sdk](https://github.com/vargHQ/sdk)** <br>`vargHQ/sdk` | 📦 `TypeScript` `JSX SDK` | • 專為視頻開發的 JSX SDK，一層 API 直接串接 Kling、Flux、ElevenLabs 與 Veed。<br>• 適合將生成直接寫入專屬 Agent 應用程式。 | 💻 **開發者友善**：用熟悉的 React 語法統一管理多模態生成服務。 |
@@ -158,6 +160,7 @@ flowchart TD
 | **[guizang-product-video-skill](https://github.com/op7418/guizang-product-video-skill)** <br>`op7418/guizang-product-video-skill` | ⭐ **~690+** | • 專注軟體產品更新與 SaaS 功能展示的 Agent Skill。<br>• 支援直接復用真實 UI 組件、設計系統 Token 與自定義按鈕音效。 | 💻 **SaaS 產品更新視頻標竿**：將 Release Notes 轉為吸睛產品短片的利器。 |
 | **[nexu-io/html-video](https://github.com/nexu-io/html-video)** <br>`nexu-io/html-video` | 🌐 `Open Design` | • 開源 HTML-to-video runtime，適合 coding agent 在本機筆電上快速出 MP4。 | ⚡ **輕量渲染**：HyperFrames 的開源本地替代方案。 |
 | **[geekjourneyx/hyperframes-motion-director](https://github.com/geekjourneyx/hyperframes-motion-director)** <br>`geekjourneyx/hyperframes-motion-director` | 🎬 `Agent Skill` | • 中文優先的 HyperFrames 導演 Skill：文章、產品官網、README 輸入，動效片直接輸出。 | 📖 **自動動態包裝**：快速將技術文檔與文章轉為生動的宣傳短片。 |
+| **[comfyui-workflow-skill](https://github.com/LingyiChen-AI/comfyui-workflow-skill)** <br>`LingyiChen-AI/comfyui-workflow-skill` | ⭐ **~420+** <br>`Agent Skill` `Workflow JSON` | • 自然語言一鍵轉 ComfyUI workflow JSON，專為 Claude Code、Cursor 等 Coding Agent 設計的技能包。<br>• 內建 34 個模板、42 個分類、360+ 節點定義與自動模型下載，涵蓋 Wan 2.2、HunyuanVideo、LTXV、FLUX 生圖與生視頻。 | 🧩 **ComfyUI 代碼工作流大腦**：讓 Agent 擺脫手動連線，直接用自然語言生成可執行的完整影音管線。 |
 
 ---
 
@@ -221,6 +224,7 @@ flowchart TD
 | **[LatentSync](https://github.com/bytedance/LatentSync)** <br>`bytedance/LatentSync` | 潛空間唇形同步 | • 字節跳動開源的 Latent Diffusion 唇形同步模型，自然度卓越。 | 🌟 **電影級口型**：MuseTalk 的強大替代方案，邊緣瑕疵極少。 |
 | **[SkyReels-A1](https://github.com/SkyworkAI/SkyReels-A1)** <br>`SkyworkAI/SkyReels-A1` | 高表現力肖像擴散 | • 崑崙萬維 Skywork 出品，基於 Video DiT 的表情生動人像動畫模型。<br>• 能精確傳遞眼神神韻與微妙情感變化。 | 🎭 **情緒演繹數字人**：短劇對手戲與充沛情感對白首選。 |
 | **[MimicMotion](https://github.com/Tencent/MimicMotion)** <br>`Tencent/MimicMotion` | 高品質人體姿態遷移 | • 騰訊開源，具備強大的置信度引導機制，實現複雜肢體動作與舞蹈的完美遷移。 | 💃 **舞蹈與動作遷移首選**：動作連貫性高於早期 AnimateAnyone。 |
+| **[HeyGen Agent Skills](https://github.com/heygen-com/skills)** <br>`heygen-com/skills` | HeyGen 官方技能 <br>⭐ **~470+** `MCP / CLI` | • HeyGen 官方出品的 Agent Skills（heygen-avatar 與 heygen-video）。<br>• 支援遠端 MCP (OAuth 帳號額度扣除) 與 CLI 雙模運作，透過 AVATAR.md 標準協議解耦。<br>• 讓 Agent 透過對話自動建立專屬形象、改寫文案並呼叫 v3 影片管線完成高品質口播成片。 | 👑 **商業數字人官方技能標竿**：最符合現代 Coding Agent 調用的官方數字人與視頻流水線。 |
 
 ---
 
@@ -235,6 +239,7 @@ flowchart TD
 | **[fish-speech](https://github.com/fishaudio/fish-speech)** <br>`fishaudio/fish-speech` | 多語/開源上限 <br>`~15k+ Stars` | • 基於自迴歸 Transformer 的頂級開源 TTS，語氣自然度與呼吸感極佳。 | 🌟 **音質上限標竿**：長篇有聲書與高品質紀錄片旁白首選。 |
 | **[MMAudio](https://github.com/hkchengrex/MMAudio)** <br>`hkchengrex/MMAudio` | 影音多模態合成 <br>`Video-to-Audio` | • 清華與 HKUST 開源的視頻配音與音效生成框架。<br>• 同時接收視頻與文本提示詞，自動為無聲畫面生成同步環境音、動作聲效與配樂。 | 🔊 **視頻自動配音首選**：補齊 AI 視頻生成畫面無聲的巨大缺口。 |
 | **[FoleyCrafter](https://github.com/open-mmlab/FoleyCrafter)** <br>`open-mmlab/FoleyCrafter` | 神經擬音 (Neural Foley) <br>`OpenMMLab` | • 專為視頻量身打造的高精度擬音合成引擎。<br>• 配備語義適配器與時間控制器，實現腳步聲、碰撞、關門等毫秒級精確對位。 | 🎬 **電影級動作擬音利器**：影視後製中自動生成同步動作音效的標配。 |
+| **[HunyuanVideo-Foley](https://github.com/Tencent-Hunyuan/HunyuanVideo-Foley)** <br>`Tencent-Hunyuan/HunyuanVideo-Foley` | 神經擬音與音效 <br>⭐ **~1,050+** | • 騰訊混元團隊官方出品的視頻擬音與環境音效生成引擎。<br>• 基於多模態擴散模型與表徵對齊 (Representation Alignment)，精準捕捉畫面動作並合成同步音效。<br>• 支援離線 Offload、批次 CSV 處理與 Gradio 視覺化介面。 | 🔊 **混元官方視頻擬音主力**：與 HunyuanVideo 完美協同，為各類無聲 AI 視頻補齊高品質同步音效。 |
 | **[ElevenLabs Hosted MCP](https://api.elevenlabs.io/v1/mcp)** <br>`ElevenLabs Official` | 商業頂級多語語音 | • ElevenLabs 官方託管的 MCP 服務器，支援 OAuth 無密鑰安全鑑權。<br>• 讓 Agent 零配置調用全球第一梯隊的逼真情緒配音、音效與自定義克隆音色。 | 🌐 **商業出海配音首選**：多語種情緒爆滿的高端 TVC 旁白通道。 |
 | **[Chatterbox](https://github.com/resemble-ai/chatterbox)** <br>`resemble-ai/chatterbox` | 英文旁白旗艦 <br>`Resemble AI` | • 2025–2026 開源 TTS 新旗艦，英文發音自然流暢，節奏感極強。 | 🇺🇸 **英文出海頻道必備**：製作面向北美與全球市場的短影音利器。 |
 | **[CosyVoice](https://github.com/QwenAudio/CosyVoice)** <br>`QwenAudio/CosyVoice` | 阿里通義多語生成 | • 阿里開源的多語言多方言語音生成模型，支援精細情緒控制與中英混讀。 | 🌐 **雙語頻道利器**：中英文夾雜科技講解影片的首選。 |
@@ -282,6 +287,8 @@ flowchart TD
 | **[Qwen3-VL](https://github.com/QwenLM/Qwen3-VL)** <br>`QwenLM/Qwen3-VL` | 多模態視覺大模型 | • 阿里通義最新多模態視覺語言旗艦，長視頻理解與精細物體定位能力處於開源第一梯隊。 | 🌟 **視覺理解基底**：自架長視頻問答與場景檢索的核心模型。 |
 | **[edit-mind](https://github.com/IliasHad/edit-mind)** <br>`IliasHad/edit-mind` | 本地視頻知識庫 | • 本機優先的視頻素材知識庫，將海量 B-Roll 素材建立可自然語言檢索的向量索引。 | 🗂️ **素材庫管理必備**：讓 Agent 能夠依照文案語意瞬間找到最合適的歷史素材。 |
 | **[VideoLLaMA3](https://github.com/DAMO-NLP-SG/VideoLLaMA3)** <br>`DAMO-NLP-SG/VideoLLaMA3` | 開源長視頻理解 | • 專為細粒度動作理解與時序因果推理設計的開源架構。 | 🔬 **深度語意分析**：適合科研與自建視頻審核流水線。 |
+| **[mcp-video-analyzer](https://github.com/guimatheus92/mcp-video-analyzer)** <br>`guimatheus92/mcp-video-analyzer` | 🔌 `FastMCP` `7 Tools` `Multi-Platform` | • FastMCP 視頻深度多模態解析服務器（支援 YouTube, TikTok, Loom, X, Vimeo, 本地檔案）。<br>• 提供 7 大 MCP 工具：場景切換檢測、密集抽幀 (dense sampling)、OCR 文字提取、Whisper 轉寫與 unified timeline。 | 🔍 **Agent 多模態看片利器**：讓 Agent 透過 MCP 直接對任意線上/本機影片執行鏡頭級抽幀與文字分析。 |
+| **[last30days-skill](https://github.com/mvanhorn/last30days-skill)** <br>`mvanhorn/last30days-skill` | 📰 `Social Trend Radar` <br>`~1.5k+ Stars` | • 專為 Coding Agent 打造的社群輿情與實時趨勢研究引擎（支援 Claude Code, Cursor, Codex, Antigravity）。<br>• 自動穿透 Reddit、X (Twitter)、Hacker News、YouTube 與 GitHub 檢索最近 30 天真實使用者討論與熱門影音產線工具。 | 📡 **即時趨勢探測雷達**：超越靜態 SEO 搜尋，直探社群第一線使用者真實評價與最新開源影音專案。 |
 
 ---
 
@@ -303,6 +310,8 @@ flowchart TD
 | **FramePack** | [lllyasviel/FramePack](https://github.com/lllyasviel/FramePack) | ControlNet 作者最新力作，讓長秒數視頻擴散生成在消費級顯卡上變得切實可行。 |
 | **ComfyUI 擴充生態** | [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) ⭐ ~60k+ | 本地擴散模型的標準作業系統，搭配 [ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper)、[ComfyUI-HunyuanVideoWrapper](https://github.com/kijai/ComfyUI-HunyuanVideoWrapper) 與 [ComfyUI-LTXVideo](https://github.com/Lightricks/ComfyUI-LTXVideo)。 |
 | **FastVideo** | [hao-ai-lab/FastVideo](https://github.com/hao-ai-lab/FastVideo) | 專為視頻生成設計的統一推論加速與後訓練框架，擺脫純節點手動操作。 |
+| **LightX2V** | [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) ⭐ ~2.8k+ | 專為視頻生成打造的高性能輕量級推論加速框架。支援 Wan-Video、HunyuanVideo、MiniMax 等，提供 8GB 顯存低成本部署、Step Distillation 與參數 Offloading。 |
+| **Causal-Forcing** | [thu-ml/Causal-Forcing](https://github.com/thu-ml/Causal-Forcing) ⭐ ~990+ | ICML 2026 清華開源，自迴歸擴散蒸餾 (Autoregressive Diffusion Distillation)，實現超高品質即時互動視頻生成。 |
 
 ---
 
@@ -343,6 +352,9 @@ flowchart TD
 | **[EvalCrafter](https://github.com/evalcrafter/EvalCrafter)** <br>`evalcrafter/EvalCrafter` | 騰訊 ARC & CUHK | • 基於 ECTV 萬條視頻基準與 17 項客觀客觀指標（視覺品質、動作流暢度、提示詞遵循）。<br>• 提供 EvalBoard 視覺化評測看板，支援自訂模型對比。 | 📈 **多維度自動評估利器**：適合團隊在本地模型微調 (Fine-tuning) 後的快速回歸測試。 |
 | **[T2V-CompBench](https://github.com/karine-h/T2V-CompBench)** <br>`karine-h/T2V-CompBench` | CVPR 2025 | • 專注評估「組合性 (Compositional)」提示詞理解的基準測試。<br>• 涵蓋屬性綁定、動態綁定、動作交互、空間方位與運動邏輯等 7 大維度 1,400 條測試案例。 | 🎯 **複雜提示詞遵循度檢驗**：測試模型能否正確理解「左邊是狗、右邊是貓且正在握手」等複雜關係。 |
 | **[ChronoMagic-Bench](https://github.com/PKU-YuanGroup/ChronoMagic-Bench)** <br>`PKU-YuanGroup/ChronoMagic-Bench` | 北大 YuanGroup <br>`NeurIPS 2024 Spotlight` | • 專注時序物理演變與延時攝影 (Time-lapse) 生成的變態評測基準。<br>• 檢驗視頻模型在長時間跨度下的物理規律演變與時間因果一致性。 | ⏳ **時序動態與物理規律評測**：檢驗世界模型與長時序生成物理連貫性的極佳工具。 |
+| **[UniVBench](https://arxiv.org/abs/2511.08521)** <br>`UniVBench-2026` | 統一視頻基座模型評測 | • 統一標準化度量視頻生成品質、長時序時空一致性與多模態指令遵循。<br>• 解決傳統單一指標割裂問題，提供跨生成與理解架構的標準化基準。 | 📐 **通用視頻模型統一考場**：全面度量多模態與生成能力的通用基準。 |
+| **[PhyEditBench](https://github.com/phyeditbench/PhyEditBench)** <br>`CVPR 2026` | 物理世界規律評測 | • 專注物理真實性與多階段動態交互的評測基準。<br>• 檢驗重力、碰撞、流體動力與連續因果關係，杜絕「看似好看但違反物理」的假真實。 | 🔬 **物理真實性深度驗收**：商業廣告與仿真視頻必測項目。 |
+| **[GenVidBench](https://github.com/genvidbench/GenVidBench)** <br>`6.78M Dataset` | 生成式視頻鑑別與質檢 | • 全球最大規模 AI 生成視頻評測與真偽鑑別基準（678 萬段視頻）。<br>• 全面覆蓋 SOTA 擴散與 DiT 模型瑕疵、時序偽影與特徵標註。 | 🛡️ **成片質檢與深度防偽**：產線自動 QC 瑕疵偵測與版權鑑別必備。 |
 
 ---
 
@@ -366,6 +378,9 @@ flowchart TD
 - **[erduo-broll-loop-engineering](https://github.com/erduo1998-cell/erduo-broll-loop-engineering)** - B-roll 無縫循環生成與動態補幀工程技能包。
 - **[ClaudeAnimationBase](https://github.com/JohnHeibel/ClaudeAnimationBase)** - 讓 Claude 快速上手 HTML5 Canvas 與 SVG 複雜動態的骨架技能包。
 - **[saas-motion-kit](https://github.com/tugrawork-creator/saas-motion-kit)** - SaaS 產品動態展示與 UI 介面交互錄屏轉動態演示專用技能包。
+- **[haidrrrry/claude-remotion-skill](https://github.com/haidrrrry/claude-remotion-skill)** - ⭐ ~275 Stars。Claude Code 專用 Remotion 動態設計技能，內建 10 條動效法則與抽幀審核修復閉環（Never ship unverified）。
+- **[DojoCodingLabs/remotion-superpowers](https://github.com/DojoCodingLabs/remotion-superpowers)** - ⭐ ~130 Stars。Claude Code 完整 Remotion 影音製作外掛，內建 5 個 MCP 服務器與 13 條指令，打通語音、音樂、B-roll 與字幕。
+- **[idwts/Crayotter](https://github.com/idwts/Crayotter)** - ⭐ ~245 Stars。多模態大模型驅動的開源剪輯智能體，支援從文字需求到成片的端到端自動剪輯與排版。
 
 ---
 
