@@ -29,6 +29,13 @@ Tenten AI 是一間 **AI-native Digital Agency & Creative Studio**。我們在�
 3. **實戰驗證 (Production-Tested)**：主清單以 **GitHub Stars $\ge$ 300** 與維護狀態把關；星數未滿 300 但產線正在使用的高潛力 Skill 則獨立收錄至 [潛力觀察名單 (Watchlist)](#-潛力觀察名單-watchlist)。
 4. **一個職位只留最好 (Best-in-Class)**：同類工具只保留 canonical 與活躍維護版本，其餘明確記錄於 [明確排除與淘汰名單](#-明確排除與淘汰名單-deliberately-excluded)。
 
+### 🌐 資料來源與生態對齊 (Data Sources & Ecosystem Alignment)
+
+本庫全面追蹤並整合全球頂尖 Agent 技能生態與專門註冊中心：
+- **[Agent Skills Hub](https://agentskillshub.top/best/claude-video-skills/) (`agentskillshub.top`)**：收錄 250+ Claude 影音技能並提供安全評級與實機審查。
+- **[skills.sh](https://skills.sh/)** 與 **[awesome-claude-video-skills](https://github.com/zhuyansen/awesome-claude-video-skills)**：社群核心技能包清單與即時活躍度監控。
+- **Tenten AI 實戰產線回測**：所有收錄技能均在真實 Coding Agent（Claude Code, Cursor, Codex, Antigravity）環境下驗證其 `SKILL.md` 規範與調用穩定度。
+
 ---
 
 ## 🗺️ 目錄 (Table of Contents)
@@ -116,6 +123,8 @@ flowchart TD
 | **[qiaomu-cut-skill](https://github.com/joeseesun/qiaomu-cut-skill)** <br>`joeseesun/qiaomu-cut-skill` | 🌲 `~370+ Stars` <br>`Agent Skill / CLI` | • 向陽喬木出品的智能視頻導演 Skill：輸入一句話，將素材治理、分鏡、字幕、轉場、動效與質檢組織為可復現視頻工程 (`QiaoCut IR`)。<br>• 整合 33台詞/Pexels/ListenHub 多源路由、代碼動效工作室 (`qcut motion`)、自動補齊依賴 (`qcut setup`) 與 ffmpeg-full 確定性渲染。 | 🎬 **可驗證導演工程標竿**：拒絕不可控黑盒，打造具備素材版權審計、真實旁白時長鎖與幀級質檢的落地流水線。 |
 | **[ViMax](https://github.com/HKUDS/ViMax)** <br>`HKUDS/ViMax` | 🎬 `Python` `PyTorch` | • 港大數據科學團隊開源的端到端虛擬製片廠。<br>• 內建 Director、Screenwriter、Producer、Generator 四大角色。<br>• 獨創 **AutoCameo** 人物鎖定技術與階層式 RAG 敘事引擎。 | ⭐ **電影級敘事首選**：解決多場景長影片的人物臉孔崩塌與情節失憶問題。 |
 | **[video-use](https://github.com/browser-use/video-use)** <br>`browser-use/video-use` | 🤖 `FFmpeg` `Claude Skill` | • Browser Use 出品的 Agentic 剪輯庫。<br>• 丟入原始素材，Agent 自動去語氣詞、調色、燒字幕、疊加動態並在切點自評。 | 🔥 **口播訪談粗剪神器**：徹底解放剪輯師雙手，口述需求即可完成粗剪與短影音切片。 |
+| **[story-to-handdrawn-video](https://github.com/gnipbao/story-to-handdrawn-video)** <br>`gnipbao/story-to-handdrawn-video` | 🎨 `~2.1k Stars` <br>`Agent Skill` | • 中文故事與小說轉手繪圖文/日記動畫 Skill：從故事腳本、分鏡、逐筆手繪風格插畫、動態運鏡到旁白成片。<br>• 內建自動關鍵詞提煉與分段繪圖提示詞生成。 | 📖 **小說推文與繪本故事神器**：打造溫暖手繪治癒系短片與兒童繪本視頻的首選。 |
+| **[lanshu-create-ai-presenter-video](https://github.com/cclank/lanshu-create-ai-presenter-video)** <br>`cclank/lanshu-create-ai-presenter-video` | 🧑‍💼 `~2.1k Stars` <br>`Codex/Claude` | • 廠商中立的 AI 數字人口播視頻生產 Skill，以文案與授權主播形象為輸入。<br>• 具備嚴格的 QA 驗收閘門、音畫同步審核與自動化成品交付機制。 | 🎙️ **標準化口播數字人流水線**：極大降低高頻商業資訊與口播內容的出片成本。 |
 | **[vox-director](https://github.com/Alisa0808/vox-director)** <br>`Alisa0808/vox-director` | ✂️ `~2.1k Stars` `Atlas Cloud` | • 將任何主題一鍵轉化為 Vox 風格剪貼畫 (Paper-collage) 解說片或廣告片。<br>• 全流程涵蓋編劇、拼貼關鍵幀生成、動態圖形、配音、配樂與字幕壓制。 | 🎓 **知識科普解說標竿**：產出風格強烈、極具吸引力的高質感動態解說片。 |
 | **[reelmimic](https://github.com/edenfunf/reelmimic)** <br>`edenfunf/reelmimic` | 🎨 `~1.4k Stars` `Claude/Codex` | • 參考影片風格拉片復刻：解析原始影片的剪輯節奏、鏡頭時長、轉場與色彩。<br>• 多 Agent 協同製片組，內建 7 大 2D 渲染引擎（向量動效、水彩、定格、動漫等）。 | 🌟 **風格復刻與動畫神器**：非侵入式學習優秀爆款運鏡語意與視覺節奏。 |
 | **[onetake](https://github.com/feitangyuan/onetake)** <br>`feitangyuan/onetake` | 🎥 `~1.7k Stars` `Agent Skill` | • 「一鏡到底 (One Continuous Camera)」動態宣傳片與 Demo 引擎。<br>• 鏡頭元素自然過渡至下一場景，內建 `probe.py` 進行幀級連戲與運動模糊質檢。 | 🚀 **產品發布片新標準**：告別突兀硬切，呈現流暢絲滑的連續鏡頭體驗。 |
@@ -141,6 +150,11 @@ flowchart TD
 | **[video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft)** <br>`Vincentwei1021/video-shotcraft` | ⭐ **~5.6k+** | • 2026 成長最快的產品片 Skill 之一。<br>• 內建 152 張鏡頭配方卡、209 段 motion preview、2.5D 運鏡，可直接匯出剪映草稿。 | 🎯 **SaaS 與科技產品片標竿**：大幅降低專業 motion 運鏡的編程門檻。 |
 | **[Manim](https://github.com/ManimCommunity/manim)** <br>`ManimCommunity/manim` | ⭐ **~65,000+** | • 3Blue1Brown 創立的專業數學與邏輯動畫社群版引擎 (Python)。<br>• Agent 能夠直接編寫 Python 腳本生成極致精美的圖表、公式推導動畫。 | 🎓 **科普與教育必備**：知識型博主、技術教學頻道生成高水準動態說明的必備底層。 |
 | **[adithya-s-k/manim_skill](https://github.com/adithya-s-k/manim_skill)** <br>`adithya-s-k/manim_skill` | ⭐ **~1.1k+** | • 專為 Claude Code 與 Coding Agent 設計的 Manim 動態技能包。<br>• 讓 Agent 能夠自主編寫、除錯並直接編譯高精度科技與數學可視化影片。 | 📐 **技術視覺化必裝**：大幅提升 Agent 產出高難度數據動態的成功率。 |
+| **[lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar)** <br>`lemomo-ai/lemo-opuscar` | ⭐ **~1.3k Stars** | • **零視頻擴散模型** (No Video Model) 的純代碼電影短片 Skill。<br>• 內建 43 種經典電影風格，全流程靠代碼、著色器與純函數式畫面高保真渲染短片。 | 🎬 **純代碼電影風格旗艦**：徹底擺脫擴散模型幻覺與算力依賴，穩定輸出風格化電影感短片。 |
+| **[gbro-collage-broll](https://github.com/pyang5166/gbro-collage-broll)** <br>`pyang5166/gbro-collage-broll` | ⭐ **~1.3k Stars** | • 半調紙拼貼 (Half-tone Paper Collage) 風格 B-Roll 生成 Skill。<br>• 三閘門嚴格審批，以首尾幀組裝動畫實現頂級紙片拼貼藝術感與節奏點。 | 📰 **高質感拼貼 B-Roll 首選**：極度適合知識型博主與商業解說的動態素材混剪。 |
+| **[motion-video-kit](https://github.com/echris6/motion-video-kit)** <br>`echris6/motion-video-kit` | ⭐ **~1.0k Stars** | • 頂級商業視頻製作 Claude Code 技能套件。<br>• 內建獨立審片員 (Critic Agent) 進行節奏質檢，生成高水準產品展示與商業宣傳片。 | 💼 **商業級審片與動效套裝**：具備自動審美評判機制的精品商業片引擎。 |
+| **[anidoodle](https://github.com/alexgreensh/anidoodle)** <br>`alexgreensh/anidoodle` | ⭐ **~820+ Stars** | • 代碼編寫手繪藝術與塗鴉循環動畫 (Art and Animation as Code)。<br>• 支援網頁循環、互動向量插畫與生動線條動態。 | ✏️ **手繪塗鴉與線條動效標竿**：低代碼生成靈動手繪插圖與網頁動態元素。 |
+| **[live-panel-skill](https://github.com/ythx-101/live-panel-skill)** <br>`ythx-101/live-panel-skill` | ⭐ **~610+ Stars** | • 配置驅動的動態架構圖與終端演示動畫：從單一 JSON 定義一鍵轉化為終端架構巡覽與科技動態。 | 📊 **技術架構動態展示必備**：開發者、架構師展示系統架構與代碼流動的宣傳利器。 |
 | **[guizang-product-video-skill](https://github.com/op7418/guizang-product-video-skill)** <br>`op7418/guizang-product-video-skill` | ⭐ **~690+** | • 專注軟體產品更新與 SaaS 功能展示的 Agent Skill。<br>• 支援直接復用真實 UI 組件、設計系統 Token 與自定義按鈕音效。 | 💻 **SaaS 產品更新視頻標竿**：將 Release Notes 轉為吸睛產品短片的利器。 |
 | **[nexu-io/html-video](https://github.com/nexu-io/html-video)** <br>`nexu-io/html-video` | 🌐 `Open Design` | • 開源 HTML-to-video runtime，適合 coding agent 在本機筆電上快速出 MP4。 | ⚡ **輕量渲染**：HyperFrames 的開源本地替代方案。 |
 | **[geekjourneyx/hyperframes-motion-director](https://github.com/geekjourneyx/hyperframes-motion-director)** <br>`geekjourneyx/hyperframes-motion-director` | 🎬 `Agent Skill` | • 中文優先的 HyperFrames 導演 Skill：文章、產品官網、README 輸入，動效片直接輸出。 | 📖 **自動動態包裝**：快速將技術文檔與文章轉為生動的宣傳短片。 |
@@ -163,6 +177,8 @@ flowchart TD
 | **[baocut](https://github.com/JimLiu/baocut)** <br>`JimLiu/baocut` | ⭐ **~520+** `Agent Skill` | • 專為 BaoCut macOS 應用與 CLI 設計的 Agent Skill。<br>• 自然語言驅動長視頻轉寫、雙語字幕對齊、多說話人標註與視頻工程導出。 | 🎙️ **雙語訪談剪輯助手**：適合雙語 Podcast 與長篇講座快速精剪。 |
 | **[OpenCut](https://github.com/OpenCut-app/OpenCut)** <br>`OpenCut-app/OpenCut` | ✂️ `CapCut Alternative` | • 開源 CapCut 網頁替代版，具備完整時間軸本體。<br>• 適合需要給非工程師人員手動微調的交付場景。 | 🛠️ **視覺化交付**：適合做為客戶或審核人員的線上檢視介面。 |
 | **[DaVinci-AutoEdit-Agent](https://github.com/liuluhaixiu/DaVinci-AutoEdit-Agent)** <br>`liuluhaixiu/DaVinci-AutoEdit-Agent` | 🎞️ `DaVinci Resolve` `Python API` | • 自媒體向 DaVinci 專用 Skill：分析素材、產出剪輯藍圖，經 Resolve API 建立時間線，人類審批後才渲染。 | 🎬 **全流程剪輯藍圖**：自媒體創作者的 Resolve 自動化管線。 |
+| **[video-recap-skills](https://github.com/zenstory-ai/video-recap-skills)** <br>`zenstory-ai/video-recap-skills` | ⭐ **~550+** `Recap Workflow` `MCP Skill` | • 影視劇解說、賽事與發布會 Recap 專用剪輯技能。<br>• 自動對齊關鍵轉折點、解說旁白與時間軸切片，支援精準倒數與動態字卡疊加。<br>• 提供模組化腳本與時間線工程模板。 | ⚡ **高光重溫與精華速剪**：專注影視與活動精彩回顧的半自動剪輯流。 |
+| **[claude-youtube-editor](https://github.com/hassancs91/claude-youtube-editor)** <br>`hassancs91/claude-youtube-editor` | ⭐ **~320+** `Claude Code Skill` `YouTube Workflow` | • 面向長視頻創作者與 YouTube 頻道的智能剪輯技能包。<br>• 支援長視頻高光段落智慧提取、B-roll 切片插入、章節標記生成與自動化縮圖建議。<br>• 深度整合 Claude Code 命令列工作流。 | 📺 **YouTube 剪輯專用助手**：一鍵將原始素材精簡為符合 YouTube 算法的長視頻與章節。 |
 
 ---
 
@@ -182,6 +198,10 @@ flowchart TD
 | **[chengfeng-videocut-skills](https://github.com/Agentchengfeng/chengfeng-videocut-skills)** <br>`Agentchengfeng/chengfeng-videocut-skills` | ⭐ **~3.0k Stars** `Claude Skill` | • 口播視頻自動粗剪與審查工作台。自動辨識贅詞口誤與靜音，生成 `review.html` 交互式審核頁。<br>• 待創作者在網頁端點選確認後才執行實際剪切並導出對齊字幕。 | 🎯 **人機協同審核神器**：讓 AI 粗剪與人類最終確認形成完美閉環。 |
 | **[MiniMax-AI/skills](https://github.com/MiniMax-AI/skills)** <br>`MiniMax-AI/skills` | 🐚 `Hailuo` `MiniMax Official` | • MiniMax 官方 Agent Skills。`minimax-multimodal-toolkit` 覆蓋海螺視頻、TTS、音樂與多場次長片。 | 🎯 **Hailuo 官方首選**：優先安裝官方包以獲取第一手參數支援。 |
 | **[ai-shortfilm-prompts](https://github.com/jnMetaCode/ai-shortfilm-prompts)** <br>`jnMetaCode/ai-shortfilm-prompts` | 🎥 `Film Structure` | • 將任何創意點子轉換為 Sora / Kling / Veo / Seedance 的電影向 Prompt。<br>• 內建 21 個類型模板與五段式敘事評估。 | 💡 **故事短片專用**：迅速將故事綱要轉化為專業電影劇本結構。 |
+| **[remotion-video-skill](https://github.com/wshuyi/remotion-video-skill)** <br>`wshuyi/remotion-video-skill` | ⭐ **~380+** `Claude Skill` `Remotion` | • 王樹義老師開源的 Remotion 視頻生成技能。<br>• 引導 Claude Agent 按照嚴格的程式碼規範將教學文本轉換為 Remotion 動畫組件。<br>• 內建教學演講、投影片轉換與動態圖解最佳實踐。 | 🎓 **學術與知識博主必備**：極高穩定度地將 Markdown 課堂筆記轉換為高品質視頻。 |
+| **[MathLens](https://github.com/shuyicc/MathLens)** <br>`shuyicc/MathLens` | ⭐ **~360+** `Manim` `Claude Skill` | • 專注 3Blue1Brown 風格數學與物理視覺化的 Agent 技能。<br>• 封裝 Manim 代碼合成、幾何坐標計算與公式演變步驟。<br>• 確保數學公式渲染零誤差、幾何動態嚴密連貫。 | 📐 **理科科普視覺化標竿**：以 Manim 引擎為核心的專業數學公式動態生成 Skill。 |
+| **[hand-drawn-explainer-video](https://github.com/hi-nikola/hand-drawn-explainer-video-nikola)** <br>`hi-nikola/hand-drawn-explainer-video-nikola` | ⭐ **~360+** `Hand-Drawn` `SVG Animation` | • 專為手繪白板解說視頻設計的導演技能。<br>• 自動將抽象概念分解為一步步的手繪草圖 SVG，並協調筆刷路徑動畫與語音時序同步。 | ✏️ **白板解說生動專家**：適合商業概念說明與複雜架構白板視覺化講解。 |
+| **[explainroo](https://github.com/vincentsch/explainroo)** <br>`vincentsch/explainroo` | ⭐ **~460+** `Explainer Engine` `Agent Kit` | • 結構化概念解說視頻生成管線。<br>• 支援將 Markdown / 網頁內容一鍵轉換為邏輯清晰的微課視頻，內建卡片化進度條與視覺節奏編排。 | 💡 **微課與知識短片利器**：注重知識密度的結構化成片技能。 |
 
 ---
 
@@ -292,6 +312,8 @@ flowchart TD
 
 - **[CozyClay](https://github.com/NomaDamas/CozyClay)** - 瀏覽器內 3D 視覺預演 (Previs)：擺放場景、調整角色機位與運鏡角度，生成確定性的分鏡圖再餵給 AI 影音模型。
 - **[codex-storyboard](https://github.com/Yuuhann1999/codex-storyboard)** - 本機多專案 Codex 分鏡工作台，將圖像/視頻生成任務無縫回填至 HyperFrames 與 Remotion。
+- **[agent-storyboard](https://github.com/Yuuhann1999/agent-storyboard)** ⭐ **~350+** - 將劇本或長篇對白自動拆解為六鏡頭標準分鏡腳本，支援角色 ID 綁定與鏡頭景別/機位自動標註。
+- **[image-story-video-wizard](https://github.com/aaronyi97/image-story-video-wizard)** ⭐ **~350+** - 圖生故事與繪本連環畫視頻嚮導，精準控制分鏡視覺連貫性與情節起承轉合。
 - **[hyperframes-student-kit](https://github.com/nateherkai/hyperframes-student-kit)** - 12 個完整的 HyperFrames + GSAP 實戰教學工程，適合內部訓練 Agent 撰寫精確動效代碼。
 
 ---
@@ -339,6 +361,11 @@ flowchart TD
 - **[sjinn-ai/seedance2.5-skills](https://github.com/sjinn-ai/seedance2.5-skills)** - 早期 Seedance 2.5 實用技能集合。
 - **[GML-MMGroup/AdCraft](https://github.com/GML-MMGroup/AdCraft)** - 行銷廣告向 Agentic 製片（無限畫布與拉片復刻）。
 - **[claude-faceless-shorts-creator](https://github.com/hassancs91/claude-faceless-shorts-creator)** - 結合 Claude + Remotion + ElevenLabs 的無臉短影音工廠。
+- **[SeeCut](https://github.com/YeJe-cpu/SeeCut)** - 多模態對話式視頻剪輯框架，支援自然語言時間軸定位與多鏡頭素材粗剪。
+- **[claude-shorts](https://github.com/AgriciDaniel/claude-shorts)** - 專為 Claude 設計的直式短影音生成管線，整合字幕、背景動態與配音。
+- **[erduo-broll-loop-engineering](https://github.com/erduo1998-cell/erduo-broll-loop-engineering)** - B-roll 無縫循環生成與動態補幀工程技能包。
+- **[ClaudeAnimationBase](https://github.com/JohnHeibel/ClaudeAnimationBase)** - 讓 Claude 快速上手 HTML5 Canvas 與 SVG 複雜動態的骨架技能包。
+- **[saas-motion-kit](https://github.com/tugrawork-creator/saas-motion-kit)** - SaaS 產品動態展示與 UI 介面交互錄屏轉動態演示專用技能包。
 
 ---
 
