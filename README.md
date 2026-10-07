@@ -93,7 +93,7 @@ flowchart TD
 這是現階段推薦優先配置給 Coding Agent 的核心組合：
 
 1. **看懂素材、拆解競品與成片 QC** ➔ **[claude-video](https://github.com/bradautomates/claude-video)** (`/watch` 抽幀、轉寫、自評) + **[reelbench-skills](https://github.com/eternityspring/reelbench-skills)** (本地零依賴逐鏡拉片、15 道質檢)
-2. **端到端 Agent 製片廠** ➔ **[OpenMontage](https://github.com/calesthio/OpenMontage)** (12 條流水線、數百個 Skill 集合) + **[hypit](https://github.com/hypit-ai/hypit)** (爆款短影音克隆、自動換臉與 100 變體裂變)
+2. **端到端 Agent 製片廠** ➔ **[OpenMontage](https://github.com/calesthio/OpenMontage)** (12 條流水線、數百個 Skill 集合) + **[hypit](https://github.com/hypit-ai/hypit)** (爆款短影音克隆、自動換臉與 100 變體裂變) + **[qiaomu-cut-skill](https://github.com/joeseesun/qiaomu-cut-skill)** (素材治理、分鏡動效與可復現渲染)
 3. **HTML 程式化直接出 MP4** ➔ **[HyperFrames](https://github.com/heygen-com/hyperframes)** (HeyGen 開源，零擴散失真、像素級確定)
 4. **React 精品動態與鏡頭配方** ➔ **[remotion-dev/skills](https://github.com/remotion-dev/skills)** + **[video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft)** + **[onetake](https://github.com/feitangyuan/onetake)** (一鏡到底宣傳片)
 5. **口播／訪談自動粗剪** ➔ **[video-use](https://github.com/browser-use/video-use)** + **[chengfeng-videocut-skills](https://github.com/Agentchengfeng/chengfeng-videocut-skills)** (自然語言自動去贅字、生成交互式 Web 審核)
@@ -113,6 +113,7 @@ flowchart TD
 | :--- | :--- | :--- | :--- |
 | **[OpenMontage](https://github.com/calesthio/OpenMontage)** <br>`calesthio/OpenMontage` | 🤖 `Claude Code` `Cursor` | • 2026 開源 agentic 製片系統，內建 12 條 pipeline、100+ tools、700+ skill 檔。<br>• 模擬真實劇組調度：調研、腳本、分鏡、素材抓取到最終渲染。 | 🔥 **2026 必備開源黑馬**：實戰產線的預設整包，讓 coding agent 一秒化身專業影視後期組。 |
 | **[hypit](https://github.com/hypit-ai/hypit)** <br>`hypit-ai/hypit` | 🚀 `~19.6k Stars` `TypeScript` | • 爆款短影音風格克隆與批量變體全自動化工廠。<br>• 覆蓋換臉 (Face Swap)、腳本改寫、B-roll 自動混剪，單一命令可生成 100 種不同版本測試素材。 | 👑 **矩陣裂變神器**：社群行銷廣告批量 A/B 測試必備。 |
+| **[qiaomu-cut-skill](https://github.com/joeseesun/qiaomu-cut-skill)** <br>`joeseesun/qiaomu-cut-skill` | 🌲 `~370+ Stars` <br>`Agent Skill / CLI` | • 向陽喬木出品的智能視頻導演 Skill：輸入一句話，將素材治理、分鏡、字幕、轉場、動效與質檢組織為可復現視頻工程 (`QiaoCut IR`)。<br>• 整合 33台詞/Pexels/ListenHub 多源路由、代碼動效工作室 (`qcut motion`)、自動補齊依賴 (`qcut setup`) 與 ffmpeg-full 確定性渲染。 | 🎬 **可驗證導演工程標竿**：拒絕不可控黑盒，打造具備素材版權審計、真實旁白時長鎖與幀級質檢的落地流水線。 |
 | **[ViMax](https://github.com/HKUDS/ViMax)** <br>`HKUDS/ViMax` | 🎬 `Python` `PyTorch` | • 港大數據科學團隊開源的端到端虛擬製片廠。<br>• 內建 Director、Screenwriter、Producer、Generator 四大角色。<br>• 獨創 **AutoCameo** 人物鎖定技術與階層式 RAG 敘事引擎。 | ⭐ **電影級敘事首選**：解決多場景長影片的人物臉孔崩塌與情節失憶問題。 |
 | **[video-use](https://github.com/browser-use/video-use)** <br>`browser-use/video-use` | 🤖 `FFmpeg` `Claude Skill` | • Browser Use 出品的 Agentic 剪輯庫。<br>• 丟入原始素材，Agent 自動去語氣詞、調色、燒字幕、疊加動態並在切點自評。 | 🔥 **口播訪談粗剪神器**：徹底解放剪輯師雙手，口述需求即可完成粗剪與短影音切片。 |
 | **[vox-director](https://github.com/Alisa0808/vox-director)** <br>`Alisa0808/vox-director` | ✂️ `~2.1k Stars` `Atlas Cloud` | • 將任何主題一鍵轉化為 Vox 風格剪貼畫 (Paper-collage) 解說片或廣告片。<br>• 全流程涵蓋編劇、拼貼關鍵幀生成、動態圖形、配音、配樂與字幕壓制。 | 🎓 **知識科普解說標竿**：產出風格強烈、極具吸引力的高質感動態解說片。 |
@@ -365,11 +366,13 @@ flowchart TD
 # 1. 進入你的視頻工作目錄
 cd your-video-project
 
-# 2. 下載所需的導演技能 (以 lanshu-awesome-ai-video-kit 為例)
+# 2. 下載或安裝所需的導演技能 (以 qiaomu-cut 或 lanshu 為例)
+npx skills add joeseesun/qiaomu-cut-skill --skill qiaomu-cut
+# 或直接克隆技能包到工作目錄
 git clone https://github.com/cclank/lanshu-awesome-ai-video-kit.git .skills/video-kit
 
 # 3. 直接在對話中呼叫 Agent
-claude "調用 video-kit 技能，幫我將這段新產品 Brief 轉換為 30 秒的 Seedance 2.5 分鏡腳本與電影運鏡 Prompt"
+claude "調用 qiaomu-cut 技能，幫我將這段新產品 Brief 轉換為完整分鏡腳本、動態包裝並渲染成片"
 ```
 
 ### 2. 在 Cursor / VSCode Cline 中配置 `.cursorrules`
