@@ -381,6 +381,7 @@ flowchart TD
 - **[haidrrrry/claude-remotion-skill](https://github.com/haidrrrry/claude-remotion-skill)** - ⭐ ~275 Stars。Claude Code 專用 Remotion 動態設計技能，內建 10 條動效法則與抽幀審核修復閉環（Never ship unverified）。
 - **[DojoCodingLabs/remotion-superpowers](https://github.com/DojoCodingLabs/remotion-superpowers)** - ⭐ ~130 Stars。Claude Code 完整 Remotion 影音製作外掛，內建 5 個 MCP 服務器與 13 條指令，打通語音、音樂、B-roll 與字幕。
 - **[idwts/Crayotter](https://github.com/idwts/Crayotter)** - ⭐ ~245 Stars。多模態大模型驅動的開源剪輯智能體，支援從文字需求到成片的端到端自動剪輯與排版。
+- **[frankShan001/CutVoke](https://github.com/frankShan001/CutVoke)** - ⭐ ~53 Stars。開源（MIT）本地優先的影片剪輯器，內建 MCP server：Claude Code、Codex、Cursor 透過 MCP / HTTP API / CLI 與人共用同一條多軌時間軸，Agent 出粗剪後可手動微調字幕、片段與關鍵幀，再以 FFmpeg 匯出 MP4 或可續編工程包。
 
 ---
 
